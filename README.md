@@ -14,8 +14,8 @@ This is a Frontend take home challenge at Signafire and this test was completed 
 
 You need to install the following: 
 
--Node.js
--npm 
+- Node.js
+- npm 
 
 ### Setup
 
@@ -37,10 +37,7 @@ For production build
 npm build
 ```
 
-### The task - 
-##Frontend Track
-
-#### MVP
+### The task 
 
 Reference the wireframe included in this repo under `/assets` folder. Match styling of the page as close to it as possible. The wireframe was not designed to have fully fleshed out UX, so use your best judgement to make your app more user friendly. Also, you will be graded on how you build your components (hint: should not only have one javascript file), your folder structure, and code readability since we highly value quality of our code.
 
