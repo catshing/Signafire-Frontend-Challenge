@@ -1,0 +1,1 @@
+- To run: npm install && npm start, accept, then go to http://localhost:8080/ in your browser

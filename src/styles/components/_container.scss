@@ -1,0 +1,20 @@
+.container {
+    margin: 0 auto;
+  }
+
+.container__wrapper {
+    display: grid;
+}
+
+strong
+{
+    background-color:#FA8072;
+}
+
+*:focus {outline:none}
+
+input { 
+    margin: 6px;
+    border-radius: 5px;
+    border: 2px solid #e6e6e9;
+}

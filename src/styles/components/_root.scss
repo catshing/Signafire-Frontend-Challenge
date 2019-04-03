@@ -1,0 +1,12 @@
+.root {
+    &__ {
+        &body {
+            display: inline-grid;
+            grid-auto-flow: row;
+            &-container {
+                display: grid;
+                justify-content: center;
+            }
+        }
+    }
+}
