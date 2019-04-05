@@ -29,6 +29,7 @@ const Message = (props) => {
                             {props.message.meta.isStarred ? 'Starred!' : 'Star Message!'}
                     </button>
                     <div>
+                    
                         <img className={showTrashed}
                             src={require('../../assets/trash.png')} onClick={() => {
                                 props.trashMessage(props.message)

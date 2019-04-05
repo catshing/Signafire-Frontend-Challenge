@@ -40,22 +40,16 @@ class MessageApp extends Component {
         this.setState({ value: e.target.value });
     }
 
-
-    toggleTrashedMessages = () => { 
-        this.setState(prevState => ({ 
+    toggleTrashedMessages = () => {
+        this.setState(prevState => ({
             showTrashed: !prevState.showTrashed
         }));
     }
 
     onChangeSubmit = (e) => {
-        e.preventDefault();    
-        
-        const {messages} = this.state;
-        let allMess = [...messages];
-        console.log(allMess);
+        e.preventDefault();     
         const word = this.state.value;
-        const re = new RegExp('(' + word + ')(?![^<>]*<\/)', 'gi')
-
+        const re = new RegExp('(' + word + ')(?![^<>]*<\/)', 'gi');
         this.setState(prevState => {
             const transformed = prevState.messages.map(m => {
                 const highlighted = m.content.replace(re, `<strong>${word}</strong>`);
@@ -65,7 +59,6 @@ class MessageApp extends Component {
                 }
                 return m;
             });
-
             return { messages: transformed, value: ''};
         });
     }
@@ -84,15 +77,13 @@ class MessageApp extends Component {
                             toggleTrashedMessages={this.toggleTrashedMessages}
                             onChangeSubmit={this.onChangeSubmit}
                             value={this.state.value}
-                            onChangeSearch={this.onChangeSearch}
-                        />
+                            onChangeSearch={this.onChangeSearch} />
                         <Messages
                             messages={this.state.showTrashed ?  this.state.TrashedMessages : this.state.messages}
                             convertDate={this.convertDate}
                             trashMessage={this.trashMessage}
                             toggleMessage={this.toggleMessage}
-                            showTrashed={this.state.showTrashed}
-                        />
+                            showTrashed={this.state.showTrashed} />
                     </div>
                 </div>
             </div>
