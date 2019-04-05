@@ -1,6 +1,6 @@
 # Signafire Frontend Challenge
 
-This is a Frontend take home challenge at Signafire and this test was completed in Javascript using React. I heavily centralized on the design aspect of the challenge which provides a friendly user experience to browser through. 
+This is a Frontend take home challenge at Signafire and this test was completed in Javascript using React. I heavily centralized on the design aspect of the challenge which provides a friendly user experience to browse through. 
 
 ## Features 
 
